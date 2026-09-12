@@ -49,7 +49,13 @@ export default function Home() {
     <>
       {/* Hero: photographic corporate supply hero */}
       <section className="hero-photo relative overflow-hidden">
-        <div className="hero-photo__bg absolute inset-0" aria-hidden="true" />
+        <div
+  className="hero-photo__bg absolute inset-0"
+  aria-hidden="true"
+  style={{
+    backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-supply.jpg)`,
+  }}
+/>
 
         <div className="container-content relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">

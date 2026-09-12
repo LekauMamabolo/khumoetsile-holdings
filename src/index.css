@@ -38,7 +38,6 @@
   .hero-photo__bg {
     position: absolute;
     inset: 0;
-    background-image: url('/khumoetsile-holdings/images/hero-supply.jpg');
     background-size: cover;
     background-position: right center;
     transform-origin: center;
