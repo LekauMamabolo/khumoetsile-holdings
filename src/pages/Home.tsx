@@ -19,7 +19,7 @@ function ImagePanel() {
     <div className="relative rounded-lg overflow-hidden shadow-sm">
       {!imgError ? (
         <img
-          src="/images/business/warehouse-supply.jpg"
+          src={`${import.meta.env.BASE_URL}images/business/warehouse-supply.jpg`}
           alt="Warehouse and supply"
           className="w-full h-72 sm:h-96 object-cover block"
           onError={() => setImgError(true)}

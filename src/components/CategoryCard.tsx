@@ -14,14 +14,14 @@ export default function CategoryCard({ name, description, icon, quoteMessage }: 
   const [imgError, setImgError] = useState(false)
 
   const imageMap: Record<string, { path: string; alt: string }> = {
-    'PPE & Safety': { path: '/images/featured/ppe-safety.jpg', alt: 'PPE and safety equipment' },
-    'Cleaning Chemicals': { path: '/images/featured/cleaning-chemicals.jpg', alt: 'Commercial cleaning products' },
-    'Steel Products': { path: '/images/featured/steel-products.jpg', alt: 'Steel products and materials' },
-    'Supply & Delivery': { path: '/images/featured/supply-delivery.jpg', alt: 'Supply and delivery services' },
-    'Fruits & Vegetables': { path: '/images/featured/fruits-vegetables.jpg', alt: 'Fresh fruits and vegetables' },
-    'Dry Food': { path: '/images/featured/dry-food.jpg', alt: 'Dry food supplies' },
-    'Frozen Food': { path: '/images/featured/frozen-food.jpg', alt: 'Frozen food supplies' },
-    'Beverages': { path: '/images/featured/beverages.jpg', alt: 'Beverage supplies' },
+    'PPE & Safety': { path: 'images/featured/ppe-safety.jpg', alt: 'PPE and safety equipment' },
+    'Cleaning Chemicals': { path: 'images/featured/cleaning-chemicals.jpg', alt: 'Commercial cleaning products' },
+    'Steel Products': { path: 'images/featured/steel-products.jpg', alt: 'Steel products and materials' },
+    'Supply & Delivery': { path: 'images/featured/supply-delivery.jpg', alt: 'Supply and delivery services' },
+    'Fruits & Vegetables': { path: 'images/featured/fruits-vegetables.jpg', alt: 'Fresh fruits and vegetables' },
+    'Dry Food': { path: 'images/featured/dry-food.jpg', alt: 'Dry food supplies' },
+    'Frozen Food': { path: 'images/featured/frozen-food.jpg', alt: 'Frozen food supplies' },
+    'Beverages': { path: 'images/featured/beverages.jpg', alt: 'Beverage supplies' },
   }
 
   const image = imageMap[name]
@@ -31,7 +31,7 @@ export default function CategoryCard({ name, description, icon, quoteMessage }: 
       <div className="relative w-full" style={{ paddingTop: '62.5%' }}>
         {image && !imgError ? (
           <img
-            src={image.path}
+            src={`${import.meta.env.BASE_URL}${image.path}`}
             alt={image.alt}
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
             onError={() => setImgError(true)}

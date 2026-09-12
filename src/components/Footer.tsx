@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container-content py-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <img
-            src="/images/logo.png"
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
             alt="Khumoetsile Holdings"
             className="h-10 w-auto brightness-0 invert opacity-95"
           />

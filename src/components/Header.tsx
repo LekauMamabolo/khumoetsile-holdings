@@ -23,7 +23,7 @@ export default function Header() {
       <div className="container-content flex h-[72px] items-center justify-between">
         <Link to="/" className="flex items-center gap-2 shrink-0" aria-label="Khumoetsile Holdings home">
           <img
-            src="/images/logo.png"
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
             alt="Khumoetsile Holdings — Supplying. Protecting. Delivering."
             className="h-10 w-auto sm:h-11"
           />

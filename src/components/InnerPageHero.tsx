@@ -15,7 +15,7 @@ export default function InnerPageHero({
   line1,
   line2,
   description,
-  backgroundImage = '/images/business/warehouse-supply.jpg',
+  backgroundImage = 'images/business/warehouse-supply.jpg',
   primaryTo = '/contact',
   primaryLabel = 'REQUEST A QUOTE',
 }: Props) {
@@ -24,7 +24,7 @@ export default function InnerPageHero({
       <div
         className="hero-photo__bg absolute inset-0"
         aria-hidden="true"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${backgroundImage})` }}
       />
 
       <div className="container-content relative z-10">

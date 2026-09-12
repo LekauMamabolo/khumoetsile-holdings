@@ -24,7 +24,7 @@ export default function Contact() {
         line1={"LET'S TALK ABOUT"}
         line2={'WHAT YOU NEED'}
         description={'Tell us what you need and our team will assist you with the right supply solution.'}
-        backgroundImage={'/images/featured/supply-delivery.jpg'}
+        backgroundImage={'images/featured/supply-delivery.jpg'}
         primaryTo={'/contact'}
         primaryLabel={'REQUEST A QUOTE'}
       />

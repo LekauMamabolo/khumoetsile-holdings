@@ -18,14 +18,14 @@ export default function About() {
   return (
     <>
       <InnerPageHero
-        eyebrow="ABOUT KHUMOETSILE HOLDINGS"
-        line1="YOUR RELIABLE"
-        line2="SUPPLY PARTNER"
-        description="Khumoetsile Holdings provides quality products and dependable supply solutions to businesses, organisations and communities."
-        backgroundImage="/images/business/warehouse-supply.jpg"
-        primaryTo="/contact"
-        primaryLabel="REQUEST A QUOTE"
-      />
+  eyebrow="ABOUT KHUMOETSILE HOLDINGS"
+  line1="YOUR RELIABLE"
+  line2="SUPPLY PARTNER"
+  description="Khumoetsile Holdings provides quality products and dependable supply solutions to businesses, organisations and communities."
+  backgroundImage={`${import.meta.env.BASE_URL}images/business/warehouse-supply.jpg`}
+  primaryTo="/contact"
+  primaryLabel="REQUEST A QUOTE"
+/>
 
       {/* Who we are */}
       <section className="bg-white py-12 lg:py-20">
@@ -47,7 +47,11 @@ export default function About() {
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-sm">
-              <img src="/images/featured/steel-products.jpg" alt="Steel products" className="w-full h-64 object-cover" />
+             <img
+  src={`${import.meta.env.BASE_URL}images/featured/steel-products.jpg`}
+  alt="Steel products"
+  className="w-full h-64 object-cover"
+/>
             </div>
           </div>
         </div>
@@ -156,7 +160,11 @@ export default function About() {
           </div>
 
           <div className="rounded-lg overflow-hidden shadow-sm">
-            <img src="/images/business/warehouse-supply.jpg" alt="Warehouse" className="w-full h-72 object-cover" />
+            <img
+  src={`${import.meta.env.BASE_URL}images/business/warehouse-supply.jpg`}
+  alt="Warehouse"
+  className="w-full h-72 object-cover"
+/>
           </div>
         </div>
       </section>

@@ -34,7 +34,7 @@ export default function Products() {
         line1="PRODUCTS &"
         line2="SERVICES"
         description="Quality products. Reliable supply. Professional service."
-        backgroundImage="/images/business/warehouse-supply.jpg"
+        backgroundImage="images/business/warehouse-supply.jpg"
         primaryTo="/contact"
         primaryLabel="REQUEST A QUOTE"
       />
@@ -124,7 +124,7 @@ export default function Products() {
             <div className="w-full rounded-lg overflow-hidden shadow-sm max-w-full">
               <div style={{ paddingTop: '56.25%' }} className="relative w-full">
                 <img
-                  src="/images/featured/supply-delivery.jpg"
+                  src={`${import.meta.env.BASE_URL}images/featured/supply-delivery.jpg`}
                   alt="Supply and delivery"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
@@ -220,10 +220,10 @@ function ImageBlock({ title }: { title: string }) {
   const [imgError, setImgError] = useState(false)
 
   const imageMap: Record<string, { path: string; alt: string }> = {
-    'PPE & Safety': { path: '/images/featured/ppe-safety.jpg', alt: 'PPE and safety equipment' },
-    'Cleaning Chemicals': { path: '/images/featured/cleaning-chemicals.jpg', alt: 'Commercial cleaning products' },
-    'Steel Products': { path: '/images/featured/steel-products.jpg', alt: 'Steel products and materials' },
-    'Supply & Delivery': { path: '/images/featured/supply-delivery.jpg', alt: 'Supply and delivery services' },
+    'PPE & Safety': { path: 'images/featured/ppe-safety.jpg', alt: 'PPE and safety equipment' },
+    'Cleaning Chemicals': { path: 'images/featured/cleaning-chemicals.jpg', alt: 'Commercial cleaning products' },
+    'Steel Products': { path: 'images/featured/steel-products.jpg', alt: 'Steel products and materials' },
+    'Supply & Delivery': { path: 'images/featured/supply-delivery.jpg', alt: 'Supply and delivery services' },
   }
 
   const image = imageMap[title]
@@ -234,7 +234,7 @@ function ImageBlock({ title }: { title: string }) {
         <div style={{ paddingTop: '56.25%' }} className="relative w-full">
           {image && !imgError ? (
             <img
-              src={image.path}
+              src={`${import.meta.env.BASE_URL}${image.path}`}
               alt={image.alt}
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
               onError={() => setImgError(true)}
