@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "tsc -b && vite build",
-  "build:github": "tsc -b && VITE_BASE_PATH=/khumoetsile-holdings/ vite build",
-  "build:production": "tsc -b && vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build:github",
-  "deploy": "gh-pages -d dist"
-},
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:github": "tsc -b && VITE_BASE_PATH=/khumoetsile-holdings/ vite build",
+    "build:production": "tsc -b && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build:github",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "framer-motion": "^11.11.9",
@@ -23,6 +23,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/node": "^26.5.1",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.7.0",
