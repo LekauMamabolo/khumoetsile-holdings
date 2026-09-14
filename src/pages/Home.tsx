@@ -38,12 +38,13 @@ function ImagePanel() {
 }
 
 export default function Home() {
-  useSeo({
-    title: 'Khumoetsile Holdings | Your One-Stop Supply Partner',
-    description:
-      'Khumoetsile Holdings supplies PPE & safety, cleaning chemicals, steel products, food and beverages, plus supply and delivery services to businesses and organisations.',
-    path: '/',
-  })
+  // Home
+useSeo({
+  title: 'PPE, Cleaning, Steel & Food Supplies | Khumoetsile Holdings',
+  description:
+    'Khumoetsile Holdings supplies PPE and safety equipment, cleaning chemicals, steel products, food, beverages and delivery services to businesses and organisations in South Africa.',
+  path: '/',
+})
 
   return (
     <>

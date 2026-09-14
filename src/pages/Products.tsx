@@ -15,12 +15,13 @@ function getCategory(id: string) {
 }
 
 export default function Products() {
-  useSeo({
-    title: 'Products & Services | Khumoetsile Holdings',
-    description:
-      'PPE & safety, cleaning chemicals, steel products, food supplies, and supply & delivery services from Khumoetsile Holdings — your one-stop supply partner.',
-    path: '/products',
-  })
+  // Products
+useSeo({
+  title: 'Products & Supply Services | Khumoetsile Holdings',
+  description:
+    'Explore PPE and safety equipment, cleaning chemicals, steel products, food supplies, beverages and supply and delivery services from Khumoetsile Holdings.',
+  path: '/products',
+})
 
   const ppe = getCategory('ppe-safety')
   const cleaning = getCategory('cleaning-chemicals')

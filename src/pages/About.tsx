@@ -8,12 +8,13 @@ import Icon from '../components/Icon'
 import { Link } from 'react-router-dom'
 
 export default function About() {
-  useSeo({
-    title: 'About Us | Khumoetsile Holdings',
-    description:
-      'Khumoetsile Holdings is a 100% black female-owned South African supply and services company serving the private sector, public sector, businesses, institutions and communities.',
-    path: '/about',
-  })
+  // About
+useSeo({
+  title: 'About Khumoetsile Holdings | South African Supply Company',
+  description:
+    'Khumoetsile Holdings is a 100% black female-owned South African supply and services company serving businesses, institutions, communities and the public and private sectors.',
+  path: '/about',
+})
 
   return (
     <>

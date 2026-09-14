@@ -5,12 +5,13 @@ import { contact } from '../data/content'
 import InnerPageHero from '../components/InnerPageHero'
 
 export default function Contact() {
-  useSeo({
-    title: 'Contact & Request a Quote | Khumoetsile Holdings',
-    description:
-      'Get in touch with Khumoetsile Holdings or request a quote for PPE, cleaning chemicals, steel products, food supplies and more.',
-    path: '/contact',
-  })
+  // Contact
+useSeo({
+  title: 'Request a Quote | Khumoetsile Holdings',
+  description:
+    'Contact Khumoetsile Holdings to request a quote for PPE, cleaning chemicals, steel products, food supplies, beverages and supply and delivery services.',
+  path: '/contact',
+})
 
   const whatsappHref = `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(
     'Hello Khumoetsile Holdings. I would like to enquire about your products and services.',
