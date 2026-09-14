@@ -6,3 +6,8 @@ dist-ssr
 .env
 .env.local
 npm-debug.log*
+
+# TypeScript generated build files
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
